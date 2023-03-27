@@ -19,7 +19,7 @@ digitalWrite(pingTrigPin, LOW);
 pinMode(pingEchoPin, INPUT);
 duration = pulseIn(pingEchoPin, HIGH);
 cm = microsecondsToCentimeters(duration);
-if(cm&lt;=50 &amp;&amp; cm&gt;0) // distance yaha set krna h
+if(cm&lt;=50 &amp;&amp; cm&gt;0) 
 {
 
 int d= map(cm, 1, 300, 10, 1000);
